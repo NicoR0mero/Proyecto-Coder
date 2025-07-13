@@ -1,26 +1,19 @@
+* {
+  margin: 0% padding 0%;
+}
+
 h1 {
   color: gold;
   font-size: 50px;
   text-align: center;
 }
 
+/* INDEX */
+
 .inicio {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-decoration: underline;
   font-size: 25px;
-}
-
-footer {
-  background-color: rgb(202, 200, 198);
-}
-
-body {
-  background-color: coral;
-}
-
-.fotoprincipal {
-  width: 400px;
-  height: 300px;
 }
 
 .fundador {
@@ -29,6 +22,57 @@ body {
   text-decoration: underline;
 }
 
+.fotoprincipal {
+  width: 400px;
+  height: 300px;
+}
+/* TITULO PRINCIPAL DE LA PAGINA */
+.TITULOPRINCIPAL {
+  font-family: "Times New Roman", Times, serif;
+  color: burlywood;
+  background-color: wheat;
+}
+
+/* Foto fundador */
+.fotoprincipal {
+  padding: 10px;
+}
+
+/* titulo de fundador */
+.fundador {
+  padding: 10px;
+}
+
+/* nuestro inicio */
+.inicio {
+  padding: 10px;
+}
+.texto-inicio {
+  padding: 10px;
+}
+
+/* modificando el fundador1 */
+.fundador1 {
+  padding: 10px;
+}
+/*------------------ termina INDEX ---------------------- */
+
+/* ----------- CONTENIDO DE FOOTER ----------------- */
+footer {
+  background-color: rgb(202, 200, 198);
+}
+
+/* LOGO FOOTER */
+.foto-ig {
+  width: 15px;
+}
+
+.foto-oulook {
+  width: 15px;
+}
+/*--------- TERMINA CONTENIDO DE FOOTER ----------- */
+
+/* ------------ COMIENZO DE HISTORIA ------------ */
 .Elcomienzo1 {
   color: gold;
   font-size: 50px;
@@ -38,7 +82,7 @@ body {
 
 .Texto1 {
   color: black;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Courier New", Courier, monospace;
   font-size: 20px;
 }
 
@@ -51,7 +95,7 @@ body {
 
 .texto2 {
   color: black;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
 }
 
@@ -68,6 +112,9 @@ body {
   font-size: 20px;
 }
 
+/* -------------------- TERMINA HISTORIA ------------------- */
+
+/* --------------------- ARRANCA MENU --------------------- */
 .menuprincipal {
   color: gold;
   font-size: 50px;
@@ -78,11 +125,26 @@ body {
 .comida1 {
   width: 300px;
   height: 200px;
+  padding: 10px;
 }
 
 .comida2 {
   width: 300px;
   height: 200px;
+  padding: 10px;
+}
+
+.list {
+  display: grid;
+}
+
+/* ------lista de menu ------ */
+
+.list {
+  grid: flex;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  align-items: center;
 }
 
 .sumate {
@@ -125,4 +187,23 @@ body {
   color: black;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 30px;
+}
+
+/* MODELADO DE PAGINA COMPLETA */
+.Pagina-Completa {
+  display: grid;
+  grid-template-areas:
+    "espacio1"
+    "espacio2"
+    "espacio3";
+}
+
+header {
+  grid-area: espacio1;
+}
+main {
+  grid-area: espacio2;
+}
+footer {
+  grid-area: espacio3;
 }
