@@ -1,11 +1,44 @@
 * {
-  margin: 0% padding 0%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 h1 {
   color: gold;
   font-size: 50px;
   text-align: center;
+}
+
+/* -----------------MODELADO DE PAGINA COMPLETA---------------------- */
+
+.Pagina-Completa {
+  display: grid;
+  grid-template-areas:
+    "espacio1"
+    "espacio2"
+    "espacio3";
+  min-height: 100vh;
+}
+
+header {
+  grid-area: espacio1;
+  background-color: #d69846;
+}
+main {
+  grid-area: espacio2;
+}
+footer {
+  grid-area: espacio3;
+}
+body {
+  background-color: #d69846 !important;
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+section {
+  background-color: transparent;
 }
 
 /* INDEX */
@@ -59,7 +92,13 @@ h1 {
 
 /* ----------- CONTENIDO DE FOOTER ----------------- */
 footer {
-  background-color: rgb(202, 200, 198);
+  background-color: #e8e4d9;
+  text-align: center;
+  padding: 25px;
+  font-size: 14px;
+  color: #666;
+  margin-top: 40px;
+  border-top: 2px solid #d6cfc2;
 }
 
 /* LOGO FOOTER */
@@ -93,12 +132,6 @@ footer {
   text-decoration: underline;
 }
 
-.texto2 {
-  color: black;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-}
-
 .dosdecadas {
   color: gold;
   font-size: 50px;
@@ -106,10 +139,14 @@ footer {
   text-decoration: underline;
 }
 
-.texto3 {
+.text-dosdecadas {
   color: black;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
+}
+.comedor {
+  max-width: 100%;
+  height: auto;
 }
 
 /* -------------------- TERMINA HISTORIA ------------------- */
@@ -136,6 +173,7 @@ footer {
 
 .list {
   display: grid;
+  grid-template-columns: ;
 }
 
 /* ------lista de menu ------ */
@@ -147,23 +185,9 @@ footer {
   align-items: center;
 }
 
-.sumate {
-  color: gold;
-  font-size: 50px;
-  text-align: center;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
+/*----------------- TERMINA MENÚ ----------------- */
 
-.completainfo {
-  color: black;
-  font-size: 20px;
-}
-
-.comedor {
-  width: 400px;
-  height: 300px;
-}
+/* -------------- EMPIEZA CONTACTO ---------------- */
 
 .Whatsapp {
   color: black;
@@ -189,21 +213,4 @@ footer {
   font-size: 30px;
 }
 
-/* MODELADO DE PAGINA COMPLETA */
-.Pagina-Completa {
-  display: grid;
-  grid-template-areas:
-    "espacio1"
-    "espacio2"
-    "espacio3";
-}
-
-header {
-  grid-area: espacio1;
-}
-main {
-  grid-area: espacio2;
-}
-footer {
-  grid-area: espacio3;
-}
+/* ------------- TERMINA CONTACTO ------------------ */
