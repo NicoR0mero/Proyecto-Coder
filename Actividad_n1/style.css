@@ -33,7 +33,7 @@ footer {
 }
 body {
   background-color: #d69846 !important;
-  font-family: Arial, sans-serif;
+  font-family: "Playfair Display", serif;
   color: #333;
   line-height: 1.6;
 }
@@ -97,8 +97,9 @@ footer {
   padding: 25px;
   font-size: 14px;
   color: #666;
-  margin-top: 40px;
+  margin-top: 60px;
   border-top: 2px solid #d6cfc2;
+  margin-bottom: auto;
 }
 
 /* LOGO FOOTER */
@@ -112,68 +113,138 @@ footer {
 /*--------- TERMINA CONTENIDO DE FOOTER ----------- */
 
 /* ------------ COMIENZO DE HISTORIA ------------ */
+
 .Elcomienzo1 {
-  color: gold;
-  font-size: 50px;
+  color: black;
+  font-size: 45px;
+  font-family: "Playfair Display", serif;
   text-align: left;
-  text-decoration: underline;
+  letter-spacing: 2px;
+  padding: 30px 15px;
 }
 
 .Texto1 {
   color: black;
-  font-family: "Courier New", Courier, monospace;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 20px;
+  padding: 10px;
 }
 
 .crecimiento1 {
-  color: gold;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 50px;
-  text-decoration: underline;
+  color: black;
+  font-size: 45px;
+  font-family: "Playfair Display", serif;
+  text-align: left;
+  letter-spacing: 2px;
+  padding: 30px 15px;
+}
+
+.desarrollo1 {
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  padding: 0px;
 }
 
 .dosdecadas {
-  color: gold;
-  font-size: 50px;
+  color: black;
+  font-size: 45px;
+  font-family: "Playfair Display", serif;
   text-align: left;
-  text-decoration: underline;
+  letter-spacing: 2px;
+  padding: 30px 15px;
 }
 
 .text-dosdecadas {
   color: black;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
+  padding: 20px;
 }
 .comedor {
   max-width: 100%;
-  height: auto;
+  border-radius: 8px;
+  animation: fadeIn 1s ease-in-out;
+  padding: 20px;
+}
+.desarrollo1 {
+  padding: 20px;
 }
 
 /* -------------------- TERMINA HISTORIA ------------------- */
 
 /* --------------------- ARRANCA MENU --------------------- */
+
+/* Título principal del menú */
 .menuprincipal {
-  color: gold;
-  font-size: 50px;
+  font-size: 40px;
+  color: #8b5e3c;
   text-align: center;
-  text-decoration: underline;
+  margin-bottom: 40px;
+  border-bottom: 2px solid #c1a57b;
+  padding-bottom: 10px;
 }
 
-.comida1 {
-  width: 300px;
-  height: 200px;
-  padding: 10px;
+/* Lista general */
+.lista {
+  max-width: 900px;
+  margin: auto;
+  list-style-type: none;
 }
 
-.comida2 {
-  width: 300px;
-  height: 200px;
-  padding: 10px;
+.list-food {
+  list-style-type: none;
 }
 
-.list {
-  display: grid;
-  grid-template-columns: ;
+/* Ítems del menú */
+.lista li {
+  margin-bottom: 40px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.lista h2 {
+  font-size: 22px;
+  color: #8b5e3c;
+  margin-bottom: 10px;
+}
+
+.lista p {
+  font-size: 16px;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+.comida1,
+.comida3 {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s;
+}
+
+.comida1:hover,
+.comida2:hover,
+.comida3:hover {
+  transform: scale(1.03);
+}
+
+@media (max-width: 768px) {
+  .menuprincipal {
+    font-size: 26px;
+  }
+
+  .lista li {
+    padding: 15px;
+  }
+
+  .lista h2 {
+    font-size: 18px;
+  }
 }
 
 /* ------lista de menu ------ */
@@ -188,29 +259,11 @@ footer {
 /*----------------- TERMINA MENÚ ----------------- */
 
 /* -------------- EMPIEZA CONTACTO ---------------- */
-
-.Whatsapp {
-  color: black;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 30px;
+.card-body i {
+  transition: transform 0.3s ease;
 }
-
-.Instagram {
-  color: black;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 30px;
-}
-
-.Email {
-  color: black;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 30px;
-}
-
-.Reservas {
-  color: black;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 30px;
+.card-body:hover i {
+  transform: scale(1.2);
 }
 
 /* ------------- TERMINA CONTACTO ------------------ */
