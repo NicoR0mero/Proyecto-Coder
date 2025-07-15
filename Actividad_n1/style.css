@@ -267,3 +267,68 @@ footer {
 }
 
 /* ------------- TERMINA CONTACTO ------------------ */
+
+/* -------------- MEMBRESIA DE LA CASA ------------ */
+
+.promo {
+  background-color: #ebc67c;
+  padding: 30px;
+  border-top: 1px solid #ddd;
+}
+.promo ul {
+  list-style: none;
+  padding: 0;
+}
+
+.promo li {
+  margin-bottom: 15px;
+  font-size: 17px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.membresiavip {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f4e9dc;
+  border-bottom: 2px solid #c1a57b;
+}
+
+.membresiavip h1 {
+  font-size: 32px;
+  color: #8b5e3c;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.membresiavip p {
+  font-size: 18px;
+  max-width: 600px;
+  margin: auto;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.formulario-membresia {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 30px;
+}
+
+.elemento-formulario label {
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-size: medium;
+  padding: 10px;
+}
+
+.elemento-formulario input {
+  padding: 10px;
+  border-color: 1px #ebc67c;
+  font-size: 1rem;
+}
+
+.elemento-formulario {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}

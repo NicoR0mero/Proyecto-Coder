@@ -51,7 +51,7 @@
       </nav>
     </header>
     <section class="membresiavip">
-      <h1>Sumate a nuestra gran comunidad</h1>
+      <h1 class="sumate1">Sumate a nuestra gran comunidad</h1>
       <p>
         Completando este formulario podes acceder a miles de beneficios que
         ofrece nuestro restaurante como por ejemplo:
@@ -65,23 +65,20 @@
         <li>Almuerzos, meriendas y cena exclusiva.</li>
       </ul>
     </section>
-    <section>
-      <form action="/submit" method="post">
-        <label for="Nombre"
-          >Nombre:
-          <input type="text" name="Nombre" id="Nombre" />
-        </label>
-
-        <label for="Email"
-          >Email
-          <input type="text" name="Email" id="Email" />
-        </label>
-
-        <label for="Telefono"
-          >Teléfono
-          <input type="number" name="number" id="Telefono" />
-        </label>
-
+    <section class="formulario-membresia">
+      <div class="elemento-formulario">
+        <label for="Nombre">Nombre: </label>
+        <input type="text" name="Nombre" id="Nombre" />
+      </div>
+      <div class="elemento-formulario">
+        <label for="Email">Email </label>
+        <input type="text" name="Email" id="Email" />
+      </div>
+      <div class="elemento-formulario">
+        <label for="Telefono">Teléfono </label>
+        <input type="number" name="number" id="Telefono" />
+      </div>
+      <div class="elemento-formulario">
         <label for="pais">País</label>
         <select name="pais" id="pais">
           <option value="Argentina">Argentina</option>
@@ -89,7 +86,10 @@
           <option value="Colombia">Colombia</option>
           <option value="Uruguay">Uruguay</option>
         </select>
-      </form>
+      </div>
+      <div class="elemento-formulario">
+        <input type="submit" />
+      </div>
     </section>
     <footer id="footer">
       <div>
